@@ -1,5 +1,5 @@
-import content from '../config/common'
-import '../styles/components/footer.css';
+import Content from "@/config/common"
+import '@styles/components/footer.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTelegram, faVk } from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +11,7 @@ export default function Footer()
             <div className="footer-content">
                 <div className="social-links">
                     <a
-                        href={content.footer.github}
+                        href={Content.footer.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -19,7 +19,7 @@ export default function Footer()
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a
-                        href={content.footer.vk}
+                        href={Content.footer.vk}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Twitter"
@@ -27,7 +27,7 @@ export default function Footer()
                         <FontAwesomeIcon icon={faVk} />
                     </a>
                     <a
-                        href={content.footer.telegram}
+                        href={Content.footer.telegram}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
@@ -37,7 +37,7 @@ export default function Footer()
                 </div>
 
                 <div className="footer-info">
-                    <p>© {content.info.copyright.year} {content.header.title}. {content.info.copyright.content}</p>
+                    <p>© {Content.info.copyright.year} {Content.header.title}. {Content.info.copyright.content}</p>
                 </div>
             </div>
         </footer>
